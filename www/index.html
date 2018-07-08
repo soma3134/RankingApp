@@ -20,9 +20,9 @@
 
         <div class="rankingArea">
             <ol class="sortable">
-                <li><input type="text" name="field1" class="field-divided" placeholder="First" />
-                <li><input type="text" name="field1" class="field-divided" placeholder="First" />
-                <li><input type="text" name="field1" class="field-divided" placeholder="First" />
+                <li><input type="text" name="field1" class="field-divided" placeholder="First" id="r01" />
+                <li><input type="text" name="field1" class="field-divided" placeholder="First" id="r02" />
+                <li><input type="text" name="field1" class="field-divided" placeholder="First" id="r03" />
                 <li><input type="text" name="field1" class="field-divided" placeholder="First" />
                 <li><input type="text" name="field1" class="field-divided" placeholder="First" />
                 <li><input type="text" name="field1" class="field-divided" placeholder="First" />
@@ -33,12 +33,19 @@
             </ol>
         </div>
 
-        <a href="https://twitter.com/share" class="twitter-share-button" data-url="【ページのURL】" data-text="【ツイート本文】" data-via="【ユーザ名】" data-size="10" data-related="Shoma" data-count="【カウント表示の種類】" data-hashtags="【ハッシュタグ】">Tweet</a>
+<!--         <a href="https://twitter.com/share" class="twitter-share-button" data-url="【ページのURL】" data-text=form.field1 data-via="【ユーザ名】" data-size="10" data-related="Shoma" data-count="【カウント表示の種類】" data-hashtags="RankingApp">Tweet</a><br>
+
+        <a href="https://twitter.com/share" class="twitter-share-button">t</a>
+ -->
+        <input type="button" class="twitter-share-button" value="Tweet" onclick="button_click()" />
+
+
         
         <!-- JSファイルの読み込みはここで -->
         <script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="lib/jquery.sortable.min.js"></script>
         <script type="text/javascript" src="lib/cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/autotweet.js"></script>
     </body>
 </html>
